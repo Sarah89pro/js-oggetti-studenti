@@ -38,8 +38,8 @@ var students = [{
   
 //Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età. Una volta creato il nuovo oggetto inserirlo nell'array creato.
 var newStudent = student;
-newStudent.name = prompt("inserisci il tuo Nome");
-newStudent.surname = prompt("inserisci il tuo Cognome");
+newStudent.name = prompt("inserisci il tuo Nome").toLowerCase().trim();
+newStudent.surname = prompt("inserisci il tuo Cognome").toLowerCase().trim();
 newStudent.age = parseInt(prompt("inserisci la tua età"));
 students.push(newStudent);
 console.table(students);
