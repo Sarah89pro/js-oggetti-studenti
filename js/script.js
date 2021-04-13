@@ -2,9 +2,9 @@
 // Creare un oggetto che descriva uno studente, con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
   
 var student = {
-    "name": " ",
-    "surname": " ",
-    "age": 0
+    name: " ",
+    surname: " ",
+    age: 0
 };
 
 for (var key in student) {
@@ -14,24 +14,24 @@ for (var key in student) {
 //Creare un array di oggetti di studenti.
   
 var students = [{
-    "name": "Marco",
-    "surname": "Rossi",
-    "age": 22
+    name: "Marco",
+    surname: "Rossi",
+    age: 22
     },
     {
-    "name": "Sefano",
-    "surname": "Verdi",
-    "age": 31
+    name: "Sefano",
+    surname: "Verdi",
+    age: 31
     },
     {
-    "name": "Maria",
-    "surname": "Bianchi",
-    "age": 18
+    name: "Maria",
+    surname: "Bianchi",
+    age: 18
     },
     {
-    "name": "Franco",
-    "surname": "Neri",
-    "age": 27
+    name: "Franco",
+    surname: "Neri",
+    age: 27
     }
   
 ];
@@ -42,7 +42,7 @@ newStudent.name = prompt("inserisci il tuo Nome");
 newStudent.surname = prompt("inserisci il tuo Cognome");
 newStudent.age = parseInt(prompt("inserisci la tua età"));
 students.push(newStudent);
-console.log(students);
+console.table(students);
   
 //Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 for (var i = 0; i < students.length; i++) {
